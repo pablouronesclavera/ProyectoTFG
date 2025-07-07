@@ -4,7 +4,7 @@
 
 Bienvenido al repositorio del proyecto **Botanic Chatbot**, un sistema conversacional basado en Inteligencia Artificial diseñado para ayudar a agricultores y técnicos en la gestión del cultivo de algodón y la identificación de plagas y enfermedades.  
 
-Desarrollado como parte de un Trabajo Fin de Grado.
+Ha sido desarrollado como parte de un Trabajo Fin de Grado por Pablo Urones Clavera en colaboración con la Universidad de Oviedo y la empresa Satec.
 
 ---
 
@@ -28,8 +28,11 @@ Botanic Chatbot es una aplicación web que permite simular conversaciones con un
 
 El usuario puede:
 1️⃣ Seleccionar el tipo de chat desde un menú principal.  
+
 2️⃣ Enviar preguntas o audios al chatbot.  
+
 3️⃣ Reiniciar el historial del chat. 
+
 4️⃣ Cambiar de chat cuando lo desee.  
 
 Todo ello mediante una interfaz responsiva y accesible.
@@ -45,10 +48,10 @@ El sistema está preparado para ejecutarse en contenedores Docker. También, el 
 ## 📌 **Instalación rápida**
 
 # Clona el repositorio
-git clone <URL_DEL_REPO>
+git clone https://github.com/pablouronesclavera/ProyectoTFG.git
 
 # Instala dependencias
-cd <directorio-proyecto>
+cd <directorio-proyecto/frontend>
 pnpm install
 
 # Ejecuta en modo desarrollo
