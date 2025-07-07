@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📂 Estructura principal del proyecto
 
-## Getting Started
+- `public/`: Archivos públicos como imágenes o iconos accesibles desde el navegador.
+- `src/`: Código fuente de la aplicación.
+  - `app/`: Componentes principales y vistas del frontend.
+  - `services/`: Lógica de comunicación con las APIs.
+- `docker-compose.yml`: Configuración para el despliegue con Docker.
+- `Dockerfile`: Imagen de Docker para el frontend.
+- `next.config.ts`: Configuración de Next.js.
+- `package.json`: Dependencias y scripts del proyecto.
+- `pnpm-lock.yaml`: Bloqueo de versiones de las dependencias.
+- `tailwind.config.ts`: Configuración de Tailwind CSS.
+- `tsconfig.json`: Configuración de TypeScript.
+- `README.md`: Este archivo, guía del frontend.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Instrucciones relevantes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Ejecuta en modo desarrollo
+pnpm run dev
 
-## Learn More
+Observar en http://localhost:3000/ 
 
-To learn more about Next.js, take a look at the following resources:
+## Ejecuta en modo producción
+pnpm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+pnpm run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usando Docker
+docker-compose up --build
 
-## Deploy on Vercel
+Observar en http://localhost:8080/ 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Más información
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para obtener más información sobre Next.js, consulta los siguientes recursos:
+
+- Documentación de Next.js](https://nextjs.org/docs): información sobre las funciones y la API de Next.js.
+- Learn Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
+
+Puedes consultar [el repositorio GitHub de Next.js](https://github.com/vercel/next.js) - ¡tus comentarios y contribuciones son bienvenidos!
+
+### Despliegue en Vercel
+
+La forma más sencilla de desplegar tu aplicación Next.js es utilizar la [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) de los creadores de Next.js.
+
+Echa un vistazo a nuestra [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) para más detalles.

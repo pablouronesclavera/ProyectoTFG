@@ -53,16 +53,7 @@ git clone https://github.com/pablouronesclavera/ProyectoTFG.git
 
 # Instala dependencias
 cd <directorio-proyecto/frontend>
+
 pnpm install
 
-# Ejecuta en modo desarrollo
-pnpm run dev
-Observar en http://localhost:3000/ 
-
-# Ejecuta en modo producción
-pnpm run build
-pnpm run start
-
-# Usando Docker
-docker-compose up --build
-Observar en http://localhost:8080/ 
+Para más instrucciones click [aquí](frontend/README.md)
