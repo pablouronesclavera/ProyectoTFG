@@ -27,6 +27,7 @@ Botanic Chatbot es una aplicación web que permite simular conversaciones con un
 ### ⚡ **Cómo funciona**
 
 El usuario puede:
+
 1️⃣ Seleccionar el tipo de chat desde un menú principal.  
 
 2️⃣ Enviar preguntas o audios al chatbot.  
