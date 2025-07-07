@@ -1,29 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-export async function fetchFromIA(chatInput: string): Promise<{ output: string; error?: string }> {
-  try {
-    const response = await fetch(
-      `http://localhost:5678/webhook/knowledge-base/enquiry?chatInput=${encodeURIComponent(chatInput)}`,
-      {
-        method: "GET",
-      }
-    );
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(errorText || "Error al obtener la respuesta");
-    }
-
-    const data = await response.json();
-    return { output: data.output || "" };
-  } catch (error) {
-    console.error("Error en fetchFromIA:", error);
-    return { output: "", error: (error as Error).message };
-  }
-}
-
 export async function fetchFromAlgodonAPI(message: string, signal?: AbortSignal) {
-  //const response = await fetch("https://chat-algodon-425033219033.europe-southwest1.run.app/chat", {
   const response = await fetch("/api/chat", {
     method: "POST",
     headers: {
@@ -49,7 +26,6 @@ export async function fetchFromPlagasAPI(
   historial: string,
   signal?: AbortSignal
 ) {
-  //const response = await fetch("https://prototipofinal-425033219033.europe-southwest1.run.app/conversar", {
   const response = await fetch("/api/conversar", {
     method: "POST",
     headers: {

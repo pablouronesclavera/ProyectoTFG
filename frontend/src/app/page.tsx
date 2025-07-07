@@ -1,13 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import {
-  Bot,
-  MessageCircleQuestion,
-  MessagesSquare,
-  Sprout,
-  Biohazard,
-  MessageSquareMore,
-} from "lucide-react";
+import { Bot, Sprout, Biohazard } from "lucide-react";
 
 export default function HomePage() {
   const router = useRouter();
@@ -22,15 +15,6 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-2 gap-3 w-full mb-5">
-          {/* <button
-            onClick={() => router.push("/chat")}
-            className="bg-teal-100 hover:bg-teal-500 rounded-xl p-3 shadow-sm text-sm text-left text-gray-800 flex flex-col items-start"
-          >
-            <div className="w-10 h-10 mb-5 flex items-center justify-center rounded-full bg-white border-2 border-teal-500">
-              <MessageCircleQuestion className="w-6 h-6 text-teal-500" />
-            </div>
-            Empezar nuevo chat
-          </button> */}
           <button
             onClick={() => router.push("/chat_cultivo_algodon")}
             className="bg-teal-100 hover:bg-teal-500 rounded-xl p-3 shadow-sm text-sm text-left text-gray-800 flex flex-col items-start"
@@ -51,16 +35,6 @@ export default function HomePage() {
             Plagas y enfermedades
           </button>
         </div>
-
-        {/* <button
-          onClick={() => router.push("/chat")}
-          className="bg-teal-500 hover:bg-teal-600 w-full text-white px-5 py-2 rounded-full text-sm flex justify-between items-center shadow-md"
-        >
-          <span>Empezar nuevo chat</span>
-          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-black border border-teal-500">
-            <MessageSquareMore className="w-6 h-6 text-white" />
-          </div>
-        </button> */}
       </div>
     </div>
   );

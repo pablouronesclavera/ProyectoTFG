@@ -44,21 +44,7 @@ export class VoiceRecognitionService {
     });
   }
 
-  async sendRecordedAudio(audioBlob: Blob): Promise<string> {
-    const formData = new FormData();
-    formData.append("audio_file", audioBlob, "audio.webm");
-
-    try {
-      const response = await fetch("/api/transcribe", { method: "POST", body: formData });
-      const data = await response.json();
-      return data.transcription || "No se pudo obtener la transcripción.";
-    } catch (error) {
-      console.error("Error al enviar el audio:", error);
-      return "Error en la transcripción.";
-    }
-  }
-
-  // api de altube
+  // api de algodon
   async sendVoiceStreamToAlgodon(audioBlob: Blob): Promise<VoiceStreamResponseAlgodon> {
     try {
       const formData = new FormData();
@@ -94,6 +80,7 @@ export class VoiceRecognitionService {
     }
   }
 
+  // api de plagas
   async sendVoiceStreamToPlagas(audioBlob: Blob): Promise<VoiceStreamResponsePlagas> {
     try {
       const formData = new FormData();

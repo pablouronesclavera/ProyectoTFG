@@ -13,7 +13,6 @@ import {
   MicOff,
   SendHorizontal,
   ChevronLeft,
-  Camera,
   ListRestart,
   CircleStop,
 } from "lucide-react";
@@ -264,26 +263,6 @@ export default function Chat() {
         </div>
 
         <div className="flex items-center border-t pt-3">
-          {/* <label className="text-teal-500 text-xl cursor-pointer ml-2 mr-3">
-            <FileUp size={24} />
-            <input
-              type="file"
-              className="hidden"
-              onChange={handleFileUpload}
-              accept="application/pdf, text/plain, text/markdown, 
-                      image/png, image/jpeg, image/jpg, image/webp"
-            />
-          </label> */}
-          {/* <label className="text-teal-500 text-xl cursor-pointer md:hidden mr-2">
-            <Camera size={24} />
-            <input
-              type="file"
-              accept="image/*"
-              capture="environment"
-              className="hidden"
-              onChange={handleCameraPhoto}
-            />
-          </label> */}
           <div className="relative flex-1">
             <button
               className={`absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 ${
